@@ -19,4 +19,10 @@ class KontoTest {
         Konto konto = new Konto("Chris","123",200);
         assertEquals(200,konto.indsæt(-100));
     }
+
+    @Test
+    void hævPenge() {
+        Konto konto = new Konto("Chris","123",500);
+        assertEquals(500,konto.hævPenge(1000));
+    }
 }
